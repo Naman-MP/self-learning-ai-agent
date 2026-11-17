@@ -1,0 +1,23 @@
+[project]
+name = "self-learning-ai-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "dotenv>=0.9.9",
+    "langchain>=1.5.0",
+    "langchain-google-genai>=4.5.0",
+    "langchain-ollama>=1.1.0",
+    "langchain-openrouter>=0.2.9",
+    "langgraph>=1.2.22",
+    "pydantic>=2.14.3",
+    "pytest>=9.2.0",
+]
+
+[project.scripts]
+self-learning-ai-agent = "self_learning_ai_agent:main"
+
+[build-system]
+requires = ["uv_build>=0.12.13,<0.13.0"]
+build-backend = "uv_build"
